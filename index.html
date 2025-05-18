@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chidubem Eats | Authentic Nigerian Cuisine</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Chidubem Eats</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="#reservations">Reservations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="mb-4">Experience Authentic Nigerian Cuisine</h1>
+                    <p class="tagline mb-5">Discover the vibrant flavors and rich cultural heritage of Nigeria through our carefully crafted dishes</p>
+                    <div class="d-flex gap-3">
+                        <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
+                        <a href="#reservations" class="btn btn-outline-light btn-lg">Book a Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Our Restaurant" class="img-fluid about-img fade-in">
+                </div>
+                <div class="col-lg-6">
+                    <div class="fade-in">
+                        <h2 class="mb-4">Our Story</h2>
+                        <p>Founded in 2015 by Chef Chidubem Nkemka, Chidubem Eats brings the heart and soul of Nigerian cuisine to your plate. What started as a small family kitchen has grown into a culinary destination celebrated for its authentic flavors and warm hospitality.</p>
+                        <p>Our recipes have been passed down through generations, preserving the authentic tastes of Nigeria while incorporating contemporary culinary techniques. We source only the freshest ingredients, many imported directly from Nigeria, to ensure that each dish retains its traditional flavor profile.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <div>
+                                <h4>10+</h4>
+                                <p class="text-muted">Years of Experience</p>
+                            </div>
+                            <div>
+                                <h4>50+</h4>
+                                <p class="text-muted">Authentic Dishes</p>
+                            </div>
+                            <div>
+                                <h4>5000+</h4>
+                                <p class="text-muted">Happy Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Banner -->
+    <section class="py-4" style="background-color: var(--accent-color);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h3 class="mb-0">Special Weekend Offer: 20% off on all Jollof Rice dishes! Book your table now!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto fade-in">
+                    <h2 class="mb-3">Our Popular Dishes</h2>
+                    <p>Explore our exquisite menu featuring Nigeria's most beloved dishes, prepared with authentic recipes and the finest ingredients</p>
+                </div>
+            </div>
+            
+            <ul class="nav nav-pills justify-content-center mb-5 fade-in" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mains-tab" data-bs-toggle="pill" data-bs-target="#mains" type="button" role="tab">Main Dishes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sides-tab" data-bs-toggle="pill" data-bs-target="#sides" type="button" role="tab">Sides</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab">Desserts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks" type="button" role="tab">Drinks</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="menuTabsContent">
+                <div class="tab-pane fade show active" id="all" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Menu Item 1 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="/assets/Jollof Rice.jpg" class="card-img-top menu-img" alt="Jollof Rice">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Jollof Rice</h5>
+                                        <span class="price">₦200</span>
+                                    </div>
+                                    <p class="card-text">Fragrant long-grain rice cooked in a rich tomato sauce with peppers, onions, and traditional Nigerian spices.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 2 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="/assets/Egusi Soup.jpg" class="card-img-top menu-img" alt="Egusi Soup">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Egusi Soup</h5>
+                                        <span class="price">₦300</span>
+                                    </div>
+                                    <p class="card-text">A rich soup made from ground melon seeds, spinach, and a selection of meats or fish, served with pounded yam.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 3 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="/assets/suya.jpg" class="card-img-top menu-img" alt="Suya">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Suya</h5>
+                                        <span class="price">₦100</span>
+                                    </div>
+                                    <p class="card-text">Skewered beef marinated in a spicy peanut blend, grilled to perfection and served with fresh onions and tomatoes.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 4 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="/assets/Pounded Yam.jpg" class="card-img-top menu-img" alt="Pounded Yam">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Pounded Yam</h5>
+                                        <span class="price">₦150</span>
+                                    </div>
+                                    <p class="card-text">Smooth, stretchy dough-like side dish made from yam, perfect for dipping into various Nigerian soups.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 5 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="/assets/Zobo.jpg" class="card-img-top menu-img" alt="Zobo Drink">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Zobo Drink</h5>
+                                        <span class="price">₦200</span>
+                                    </div>
+                                    <p class="card-text">A refreshing beverage made from dried hibiscus flowers, flavored with ginger, pineapple, and natural sweeteners.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 6 -->
+                        <div class="col-md-6 col-lg-4 fade-in">
+                            <div class="card menu-card h-100">
+                                <img src="assets/Chin Chin.jpg" class="card-img-top menu-img" alt="Chin Chin">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h5 class="card-title mb-0">Chin Chin</h5>
+                                        <span class="price">₦50</span>
+                                    </div>
+                                    <p class="card-text">Crunchy fried pastry snack, lightly sweetened and perfect for dessert or as an accompaniment to a drink.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0">
+                                    <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other tab panes would be defined similarly -->
+                <div class="tab-pane fade" id="mains" role="tabpanel">
+                    <!-- Main dishes content -->
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="card menu-card h-100">
+                            <img src="/assets/Jollof Rice.jpg" class="card-img-top menu-img" alt="Jollof Rice">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title mb-0">Jollof Rice</h5>
+                                    <span class="price">₦200</span>
+                                </div>
+                                <p class="card-text">Fragrant long-grain rice cooked in a rich tomato sauce with peppers, onions, and traditional Nigerian spices.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="sides" role="tabpanel">
+                    <!-- Sides content -->
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="card menu-card h-100">
+                            <img src="/assets/suya.jpg" class="card-img-top menu-img" alt="Suya">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title mb-0">Suya</h5>
+                                    <span class="price">₦100</span>
+                                </div>
+                                <p class="card-text">Skewered beef marinated in a spicy peanut blend, grilled to perfection and served with fresh onions and tomatoes.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+                <div class="tab-pane fade" id="desserts" role="tabpanel">
+                    <!-- Desserts content -->
+                </div>
+                <div class="tab-pane fade" id="drinks" role="tabpanel">
+                    <!-- Drinks content -->
+                    <div class="col-md-6 col-lg-4 fade-in">
+                        <div class="card menu-card h-100">
+                            <img src="/assets/Zobo.jpg" class="card-img-top menu-img" alt="Zobo Drink">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="card-title mb-0">Zobo Drink</h5>
+                                    <span class="price">₦200</span>
+                                </div>
+                                <p class="card-text">A refreshing beverage made from dried hibiscus flowers, flavored with ginger, pineapple, and natural sweeteners.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <button class="btn btn-sm btn-outline-primary">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5 fade-in">
+                <a href="#" class="btn btn-primary btn-lg">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto fade-in">
+                    <h2 class="mb-3">What Our Customers Say</h2>
+                    <p>Hear from our satisfied patrons who have experienced the authentic flavors and warm hospitality of Naija Delights</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"The Jollof rice is the best I've had outside of Nigeria! Authentic flavors that instantly transported me back home. The staff was friendly and the atmosphere was warm and welcoming."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="/assets/oluwaseun.jpg" alt="Customer Avatar" class="rounded-circle" width="60" height="60">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Oluwaseun A.</h5>
+                                <small>Regular Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="mb-4">"As someone new to Nigerian cuisine, the staff were incredibly helpful in guiding my choices. The Egusi soup was a revelation! Will definitely be returning to try more dishes."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="/assets/jessica.jpg" alt="Customer Avatar" class="rounded-circle" width="60" height="60">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Jessica M.</h5>
+                                <small>First-time Visitor</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="testimonial-card h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="mb-4">"I hosted my birthday dinner here and it was perfect! The Suya platter was amazing and the Zobo drink was refreshing. The service was impeccable. Everyone in my party was impressed!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="/assets/chinedu.jpg" alt="Customer Avatar" class="rounded-circle" width="60" height="60">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-0">Chinedu O.</h5>
+                                <small>Event Host</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservations" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-in">
+                    <h2 class="mb-3">Book Your Table</h2>
+                    <p class="mb-5">Reserve your table now to experience authentic Nigerian cuisine in a warm and welcoming atmosphere</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-in">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select">
+                                    <option selected>Number of Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3-4 People</option>
+                                    <option value="4">5-6 People</option>
+                                    <option value="5">7+ People</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-select">
+                                    <option selected>Select Time</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="3" placeholder="Special Requests (Optional)"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Confirm Reservation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p class="mb-4">Have questions or feedback? We'd love to hear from you! Reach out to us using any of the methods below:</p>
+                    
+                    <div class="contact-info mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5 class="mb-0">Our Location</h5>
+                                <p class="mb-0">23 Ozumba Mbadiwe, Victoria Island, Lagos, Nigeria</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h5 class="mb-0">Phone Number</h5>
+                                <p class="mb-0">+234-706-769-5188</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5 class="mb-0">Email Address</h5>
+                                <p class="mb-0">info@chidubemeats.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5 class="mb-0">Opening Hours</h5>
+                                <p class="mb-0">Mon-Fri: 11am-10pm<br>Sat-Sun: 12pm-11pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 fade-in">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="map-container">
+                        <!-- Here we would typically insert a Google Map iframe, but for the placeholder we'll use an image -->
+                        <img src="/api/placeholder/1920/400" alt="Restaurant Location Map" class="img-fluid w-100" style="height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5" style="background-color: var(--light-color);">
+        <div class="container py-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-in">
+                    <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+                    <p class="mb-4">Stay updated with our latest menu additions, special offers, and upcoming events</p>
+                    <div class="input-group mb-3 mx-auto" style="max-width: 500px;">
+                        <input type="email" class="form-control form-control-lg" placeholder="Your Email Address" aria-label="Email Address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                    <small class="text-muted">By subscribing, you agree to receive email marketing communications from Naija Delights</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container py-3">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="text-white mb-4">Naija Delights</h4>
+                    <p>Experience the authentic taste of Nigeria in every bite. Our dishes are prepared with love, using traditional recipes and the finest ingredients.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-lg-2">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-white text-decoration-none">Menu</a></li>
+                        <li class="mb-2"><a href="#testimonials" class="text-white text-decoration-none">Testimonials</a></li>
+                        <li class="mb-2"><a href="#reservations" class="text-white text-decoration-none">Reservations</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-6 col-lg-3">
+                    <h5 class="text-white mb-4">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday: 11:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Tuesday: 11:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Wednesday: 11:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Thursday: 11:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Friday: 11:00 AM - 11:00 PM</li>
+                        <li class="mb-2">Saturday: 12:00 PM - 11:00 PM</li>
+                        <li class="mb-2">Sunday: 12:00 PM - 10:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="text-white mb-4">Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Victoria Island, Lagos, Nigeria</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> +234 123 456 7890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@naijadelights.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="border-top border-secondary pt-4">
+                        <div class="row">
+                            <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                                <p class="mb-0">&copy; 2017 Chidubem Eats. All Rights Reserved.</p>
+                            </div>
+                            <div class="col-lg-6 text-center text-lg-end">
+                                <p class="mb-0">
+                                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                                    <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                                    <a href="#" class="text-white text-decoration-none">Sitemap</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="main.js"></script>
